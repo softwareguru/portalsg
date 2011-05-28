@@ -10,6 +10,10 @@
         <edit-local-files>false</edit-local-files>
     </server-settings>
 
+    <proxy path="/static" class="static">
+        <dest href="{here}/" />
+    </proxy>
+
     <proxy path="/" keep-host="1">
         <dest href="http://localhost:8080/VirtualHostBase/http/{HOST}/Plone/VirtualHostRoot/" />
     </proxy>
@@ -17,9 +21,24 @@
     <rule class="default">
         <theme href="/static/theme.html" />
         <!-- Append the id/class attributes from the body tag, this is important for Kupu and per-section styling -->
+        <append
+            content="link[href *= 'public.css']"
+            theme="/html/head/link" />
+        <drop content="/html/head/link" />
+        <drop content="/html/head/style" />
+        <drop content="/html/head/script" />
         <replace
+            content="#portal-header"
+            theme="#header" />
+        <replace
+            content="children:#content"
+            theme="children:div.col1" />
+        <!--replace
             content="children:/html"
             theme="children:/html" />
+        <replace
+            content="children:/html"
+            theme="children:/html" /-->
     </rule>
 
 </ruleset>
