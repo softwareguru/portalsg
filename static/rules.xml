@@ -20,23 +20,18 @@
     
     <rule class="default">
         <theme href="/static/theme.html" />
-        <!-- Append the id/class attributes from the body tag, this is important for Kupu and per-section styling -->
-        <append
-            content="link[href *= 'public.css']"
-            theme="/html/head/link" />
-        <drop content="/html/head/link" />
-        <drop content="/html/head/style" />
-        <drop content="/html/head/script" />
+        <drop content="link[href $= 'columns.css']" />
         <replace
             content="#portal-header"
             theme="#header" />
         <replace
             content="children:#content"
             theme="children:div.col1" />
-        <!--replace
-            content="children:/html"
-            theme="children:/html" />
+
         <replace
+            content="#portal-column-two"
+            theme="children:div.col3" />
+        <!--replace
             content="children:/html"
             theme="children:/html" /-->
     </rule>
