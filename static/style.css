@@ -32,6 +32,11 @@ img {
 	padding-top:10px;
 }
 
+#portal-wrapper{
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
 /* Header styles */
 #header {
 	clear:both;
