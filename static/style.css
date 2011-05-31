@@ -87,6 +87,10 @@ img {
 #header ul li a span {
 	display:block;
 }
+
+#logo {
+    float: left;
+}
 /* 'widths' sub menu */
 #layoutdims {
 	clear:both;
@@ -153,7 +157,8 @@ img {
 	width:100%;
 	border-top:1px solid #000;
 }
-#footer p {
+#footer div {
 	padding:10px;
 	margin:0;
+    text-align: center;
 }
