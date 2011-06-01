@@ -24,14 +24,6 @@ p {
 	margin:.4em 0 .8em 0;
 	padding:0;
 }
-img {
-	margin:10px 0 5px;
-}
-#ads img {
-	display:block;
-	padding-top:10px;
-}
-
 #portal-wrapper{
     display: block;
     width: 960px;
@@ -124,6 +116,20 @@ ul#sgbar, ul#navbar {
     width: 110px;
     padding: 3px 0;
     font-size: 10px; text-transform: capitalize;
+}
+
+#adsbar div {
+    display: inline-block;
+    height: 90px;
+    margin-top: 15px; padding: 5px;
+    border: 1px solid #e4e4e4;
+}
+.adlong {
+    width: 708px;
+    margin-right: 7px;
+}
+.adshort {
+    width: 217px;
 }
 /* 'widths' sub menu */
 #layoutdims {
