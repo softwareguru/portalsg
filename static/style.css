@@ -4,7 +4,7 @@ body {
 	border:0;			/* This removes the border around the viewport in old versions of IE */
 	width:100%;
 	background:#fff;
-	min-width:600px;		/* Minimum width of layout - remove line if not required */
+	min-width:600px;    	/* Minimum width of layout - remove line if not required */
 					/* The min-width property does not work in old versions of Internet Explorer */
 	font-size:90%;
 }
@@ -37,6 +37,7 @@ img {
     width: 960px;
     margin: 0 auto;
 }
+
 /* Header styles */
 #header {
 	clear:both;
@@ -44,6 +45,8 @@ img {
 	width:100%;
 }
 #header {
+    width: 960px;
+    background-color: #14476b;
 	border-bottom:1px solid #000;
 }
 #header p,
@@ -93,8 +96,34 @@ img {
 	display:block;
 }
 
-#logo {
-    float: left;
+#banner, #logo {
+    display: inline-block;
+    margin: 0; padding: 0;
+}
+#banner {
+    width: 785px;
+    vertical-align: top;
+}
+/* Header bars */
+ul#sgbar, ul#navbar {
+    width: auto;
+    margin: 0; padding: 0;
+}
+#header ul.sgbar li a {
+    height: 28px; line-height: 28px;
+    width: 117px;
+    padding: 3px 5px 3px 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+#header ul.navbar {
+    margin: 0; padding: 0;
+}
+#header ul.navbar li a {
+    height: 20px; line-height: 20px;
+    width: 110px;
+    padding: 3px 0;
+    font-size: 10px; text-transform: capitalize;
 }
 /* 'widths' sub menu */
 #layoutdims {
@@ -118,7 +147,7 @@ img {
 .colmid,
 .colleft {
 	float:left;
-	width:100%;			/* width of page */
+	width:100%;
 	position:relative;
 }
 .col1,
@@ -126,34 +155,24 @@ img {
 .col3 {
 	float:left;
 	position:relative;
-	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
-					only padding top and bottom is included here, make it whatever value you need */
+	padding:0 0 1em 0;
 	overflow:hidden;
 }
-/* 3 Column settings */
-.threecol {
+/* 2 Column (right menu) settings */
+.rightmenu {
 	background:#eee;		/* right column background colour */
 }
-.threecol .colmid {
-	right:25%;			/* width of the right column */
-	background:#fff;		/* center column background colour */
+.rightmenu .colleft {
+	right: 300px;			/* right column width */
+	background:#fff;		/* left column background colour */
 }
-.threecol .colleft {
-	right:50%;			/* width of the middle column */
-	background:#f4f4f4;	/* left column background colour */
+.rightmenu .col1 {
+	width: 645px;			/* left column content width (left column width minus left and right padding) */
+	left: 300px;			/* (right column width) plus (left column left padding) */
 }
-.threecol .col1 {
-	width:46%;			/* width of center column content (column width minus padding on either side) */
-	left:102%;			/* 100% plus left padding of center column */
-}
-.threecol .col2 {
-	width:21%;			/* Width of left column content (column width minus padding on either side) */
-	left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
-}
-.threecol .col3 {
-	width:21%;			/* Width of right column content (column width minus padding on either side) */
-	left:85%;			/* Please make note of the brackets here:
-					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+.rightmenu .col2 {
+	width: 300px;			/* right column content width (right column width minus left and right padding) */
+	left: 315px;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
 }
 /* Footer styles */
 #footer {
@@ -162,8 +181,7 @@ img {
 	width:100%;
 	border-top:1px solid #000;
 }
-#footer div {
+#footer p {
 	padding:10px;
 	margin:0;
-    text-align: center;
 }

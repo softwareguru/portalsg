@@ -37,18 +37,19 @@
         <drop content="/html/head/style" />
         <drop content="/html/head/script" /-->
         <drop content="link[href $= 'columns.css']" />
+        <drop content="div[class $= 'searchSection']" />
         <replace
             content="children:#portal-globalnav"
             theme="children:#navbar" />
         <replace
             content="attributes(href):#portal-logo"
             theme="attributes(href):#logo .logo" />
-        <append
+        <replace
             content="#portal-personaltools-wrapper"
-            theme="children:#banner" />
-        <append
+            theme="#layoutdims" />
+        <replace
             content="#portal-searchbox"
-            theme="children:#banner" />
+            theme="#search" />
         <replace
             content="children:#portal-column-content"
             theme="children:div.col1" />
