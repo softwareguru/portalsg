@@ -4,6 +4,7 @@
         <execute-pyref>true</execute-pyref>
         <dev-allow>
             127.0.0.1
+            192.168.1.0/24
         </dev-allow>
 
         <dev-user username="guest" password="guest" /> 
@@ -17,7 +18,9 @@
     <proxy path="/" keep-host="1">
         <dest href="http://localhost:8080/VirtualHostBase/http/{HOST}/Plone/VirtualHostRoot/" />
     </proxy>
-    
+
+    <match path="regex:^/portal_javascripts/.*" abort="1" />
+
     <rule class="default">
         <theme href="/static/theme.html" />
         <!-- Append the id/class attributes from the body tag, this is important for Kupu and per-section styling -->
