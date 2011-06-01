@@ -4,22 +4,67 @@
         <execute-pyref>true</execute-pyref>
         <dev-allow>
             127.0.0.1
+            192.168.1.0/24
         </dev-allow>
 
         <dev-user username="guest" password="guest" /> 
         <edit-local-files>false</edit-local-files>
     </server-settings>
 
+    <proxy path="/static" class="static">
+        <dest href="{here}/" />
+    </proxy>
+
     <proxy path="/" keep-host="1">
         <dest href="http://localhost:8080/VirtualHostBase/http/{HOST}/Plone/VirtualHostRoot/" />
     </proxy>
-    
+
+    <match path="regex:^/portal_javascripts/.*" abort="1" />
+
     <rule class="default">
         <theme href="/static/theme.html" />
         <!-- Append the id/class attributes from the body tag, this is important for Kupu and per-section styling -->
+        <!--append
+            content="link[href *= 'public.css']"
+            theme="/html/head/link" />
+        <append
+            content="link[href *= 'pygmentstyles.css']"
+            theme="/html/head/link" />
+        <append
+            content="style[url *= 'twothumbs.css']"
+            theme="/html/head/style" />
+        <append
+            content="script[src *= 'twothumbs.js']"
+            theme="/html/head/script" />
+        <drop content="/html/head/link" />
+        <drop content="/html/head/style" />
+        <drop content="/html/head/script" /-->
+        <drop content="link[href $= 'columns.css']" />
+        <drop content="div[class $= 'searchSection']" />
         <replace
+            content="children:#portal-globalnav"
+            theme="children:#navbar" />
+        <replace
+            content="attributes(href):#portal-logo"
+            theme="attributes(href):#logo .logo" />
+        <replace
+            content="#portal-personaltools-wrapper"
+            theme="#layoutdims" />
+        <replace
+            content="#portal-searchbox"
+            theme="#search" />
+        <replace
+            content="children:#portal-column-content"
+            theme="children:div.col1" />
+        <replace
+            content="children:#portal-column-one"
+            theme="children:div.col2" />
+        <replace
+            content="children:#portal-column-two"
+            theme="children:div.col3" />
+        <!--replace
             content="children:/html"
-            theme="children:/html" />
+            theme="children:/html" /-->
     </rule>
 
 </ruleset>
