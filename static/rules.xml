@@ -47,9 +47,9 @@
         <replace
             content="attributes(href):#portal-logo"
             theme="attributes(href):#logo .logo" />
-        <replace
+        <prepend
             content="#portal-personaltools-wrapper"
-            theme="#layoutdims" />
+            theme="children:#banner" />
         <replace
             content="#portal-searchbox"
             theme="#search" />

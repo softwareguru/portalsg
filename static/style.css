@@ -24,6 +24,7 @@ p {
 	margin:.4em 0 .8em 0;
 	padding:0;
 }
+
 #portal-wrapper{
     display: block;
     width: 960px;
@@ -38,8 +39,10 @@ p {
 }
 #header {
     width: 960px;
-    background-color: #14476b;
-	border-bottom:1px solid #000;
+    background-color: #8a8a8a;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a8a8a', endColorstr='#ffffff'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#8a8a8a), to(#ffffff)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #8a8a8a,  #ffffff); /* for firefox 3.6+ */ 
 }
 #header p,
 #header h1,
@@ -74,17 +77,24 @@ p {
 	left:15px;
 	line-height:1.3em;
 }
-#header ul li a:hover {
+#header ul#navbar li a {
+    height: 20px; line-height: 20px;
+    width: 106px;
+    padding: 3px 5px 3px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#header ul#navbar li a:hover {
 	background:#369;
 	color:#fff;
 }
-#header ul li a.active,
-#header ul li a.active:hover {
+#header ul#navbar li a.active,
+#header ul#navbar li a.active:hover {
 	color:#fff;
 	background:#000;
 	font-weight:bold;
 }
-#header ul li a span {
+#header ul#navbar li a span {
 	display:block;
 }
 
@@ -93,8 +103,18 @@ p {
     margin: 0; padding: 0;
 }
 #banner {
-    width: 785px;
+    width: 785px; padding-left: 8px;
     vertical-align: top;
+}
+#portal-personaltools {
+    padding: 0;
+}
+#portal-searchbox {
+ margin :0 ;
+}
+
+#searchGadget, .searchButton {
+    font-size: 8px;
 }
 /* Header bars */
 ul#sgbar, ul#navbar {
@@ -103,11 +123,49 @@ ul#sgbar, ul#navbar {
 }
 #header ul.sgbar li a {
     height: 28px; line-height: 28px;
-    width: 117px;
-    padding: 3px 5px 3px 0;
+    width: 117px; padding: 3px 6px 3px 0;
+    color: #ffffff;
     text-align: right;
     text-transform: uppercase;
 }
+/* Background colors */
+#header ul.sgbar a.fondo_azul {
+    background-color: #005a7f;
+}
+#header ul.sgbar a.fondo_morado {
+    background-color: #81007f;
+}
+#header ul.sgbar a.fondo_naranja {
+    background-color: #d3691f;
+}
+#header ul.sgbar a.fondo_verde {
+    background-color: #004101;
+}
+#header ul.sgbar a.fondo_rojo {
+    background-color: #8c0001;
+}
+#header ul.sgbar a.fondo_amarillo {
+    background-color: #e0a000;
+}
+#header ul.sgbar a.fondo_azul:hover {
+    background-color: #3366cc;
+}
+#header ul.sgbar a.fondo_morado:hover {
+    background-color: #b13fb3;
+}
+#header ul.sgbar a.fondo_naranja:hover {
+    background-color: #ff9933;
+}
+#header ul.sgbar a.fondo_verde:hover {
+    background-color: #9933cc;
+}
+#header ul.sgbar a.fondo_rojo:hover {
+    background-color: #cc3333;
+}
+#header ul.sgbar a.fondo_amarillo:hover {
+    background-color: #ffcc00;
+}
+
 #header ul.navbar {
     margin: 0; padding: 0;
 }
@@ -117,19 +175,25 @@ ul#sgbar, ul#navbar {
     padding: 3px 0;
     font-size: 10px; text-transform: capitalize;
 }
-
+#adsbar {
+    clear: both; display: block;
+    width: 960px;
+}
 #adsbar div {
     display: inline-block;
+    margin: 15px 0; border: 1px solid #e4e4e4;
+}
+.adlong, .adshort {
     height: 90px;
-    margin-top: 15px; padding: 5px;
-    border: 1px solid #e4e4e4;
+    background-color: #eeeeee;
+    border 1px solid #c1c1c1;
 }
 .adlong {
-    width: 708px;
-    margin-right: 7px;
+    width: 726px;
 }
 .adshort {
-    width: 217px;
+    padding: 0 5px;
+    width: 215px;
 }
 /* 'widths' sub menu */
 #layoutdims {
@@ -175,6 +239,7 @@ ul#sgbar, ul#navbar {
 .rightmenu .col1 {
 	width: 645px;			/* left column content width (left column width minus left and right padding) */
 	left: 300px;			/* (right column width) plus (left column left padding) */
+    min-height: 500px;
 }
 .rightmenu .col2 {
 	width: 300px;			/* right column content width (right column width minus left and right padding) */
@@ -185,9 +250,28 @@ ul#sgbar, ul#navbar {
 	clear:both;
 	float:left;
 	width:100%;
-	border-top:1px solid #000;
+    margin-bottom: 10px; padding-bottom: 5px;
+    background-color: #d7e8f0;
 }
-#footer p {
-	padding:10px;
-	margin:0;
+#footer-columns {
+    height: 250px;
+}
+#footer-menu, #colophon {
+    display: inline-block;
+    float: left;
+    width: 50%; 
+    height: 40px; line-height: 40px;
+    background-color: #6399b1;
+}
+#footer-columns .column {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+#colophon {
+    text-align: right;
+}
+#footer-menu {
+    text-align: center;
 }
