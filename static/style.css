@@ -64,7 +64,7 @@ p {
 	margin:0;
 	padding:0;
 }
-#header ul li a {
+ul#sgbar li a, ul#navbar li a {
 	display:block;
 	float:left;
 	margin:0 0 0 1px;
@@ -116,13 +116,29 @@ p {
 }
 #portal-personaltools {
     padding: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    background: transparent;
+}
+dl.actionMenu a, dl.actionMenu a:link, dl.actionMenu a:visited {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+dd.actionMenuContent a, dd.actionMenuContent a:link, dd.actionMenuContent a:visited {
+    color: #525252;
+    text-transform: capitalize;
+}
+
+#portal-personaltools #anon-personalbar a {
+    color: #ffffff;
+    text-transform: uppercase;
 }
 #portal-searchbox {
- margin :0 ;
+ margin: 0 0 2px 0;
 }
 
 #searchGadget, .searchButton {
-    font-size: 8px;
+    font-size: 10px;
 }
 /* Header bars */
 ul#sgbar, ul#navbar {
@@ -131,7 +147,7 @@ ul#sgbar, ul#navbar {
 }
 #header ul.sgbar li a {
     height: 28px; line-height: 28px;
-    width: 117px; padding: 3px 6px 3px 0;
+    width: 117px; padding: 0 6px 0 0;
     color: #ffffff;
     text-align: right; text-transform: uppercase; font-size: 18px;
 }
@@ -164,7 +180,7 @@ ul#sgbar, ul#navbar {
     background-color: #ff9933;
 }
 #header ul.sgbar a.fondo_verde:hover {
-    background-color: #9933cc;
+    background-color: #339933;
 }
 #header ul.sgbar a.fondo_rojo:hover {
     background-color: #cc3333;
@@ -197,6 +213,7 @@ ul#sgbar, ul#navbar {
 }
 .adlong {
     width: 726px;
+    background-image: url(ad_long.png);
 }
 .adshort {
     padding: 0 5px;
@@ -257,7 +274,7 @@ ul#sgbar, ul#navbar {
 	clear:both;
 	float:left;
 	width:100%;
-    margin-bottom: 10px; padding-bottom: 5px;
+    margin-bottom: 20px;
     background-color: #d7e8f0;
 }
 #footer-columns {
@@ -273,8 +290,19 @@ ul#sgbar, ul#navbar {
 #footer-columns .column {
     display: inline-block;
     float: left;
-    width: 25%;
+    width: 25%; margin: 20px auto 30px auto; color: #606060;
     text-align: center;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+}
+#footer-columns .column ul {
+    margin: 0px 30px;
+    text-align: left;
+}
+#footer-columns .column li {
+    display: block;
+    width: 100%; margin: 14px 0;
+    line-height: 14px;
 }
 #colophon {
     text-align: right;
