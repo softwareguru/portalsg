@@ -43,6 +43,7 @@ p {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a8a8a', endColorstr='#ffffff'); /* for IE */
     background: -webkit-gradient(linear, left top, left bottom, from(#8a8a8a), to(#ffffff)); /* for webkit browsers */
     background: -moz-linear-gradient(top,  #8a8a8a,  #ffffff); /* for firefox 3.6+ */ 
+    background-image: url(cabezal.png);
 }
 #header p,
 #header h1,
@@ -111,8 +112,12 @@ ul#sgbar li a, ul#navbar li a {
     margin: 0; padding: 0;
 }
 #banner {
-    width: 785px; padding-left: 8px;
+    width: 785px;
     vertical-align: top;
+}
+#logo img {
+    width: 145px; height: 80px;
+    padding: 5px 0  0 12px;
 }
 #portal-personaltools {
     padding: 0;
@@ -146,10 +151,10 @@ ul#sgbar, ul#navbar {
     margin: 0; padding: 0;
 }
 #header ul.sgbar li a {
-    height: 28px; line-height: 28px;
+    height: 25px; line-height: 25px;
     width: 117px; padding: 0 6px 0 0;
     color: #ffffff;
-    text-align: right; text-transform: uppercase; font-size: 18px;
+    text-align: right; text-transform: uppercase; font-size: 14px;
 }
 /* Background colors */
 #header ul.sgbar a.fondo_azul {
