@@ -20,6 +20,9 @@
     </proxy>
 
     <match path="regex:^/portal_javascripts/.*" abort="1" />
+    <!-- Rules for special cases in Plone sites -->
+    <match path="contains:image_view_fullscreen" abort="1" />
+    <match path="contains:refbrowser_popup" abort="1" />
 
     <rule class="default">
         <theme href="/static/theme.html" />
@@ -47,9 +50,9 @@
         <replace
             content="attributes(href):#portal-logo"
             theme="attributes(href):#logo .logo" />
-        <replace
+        <prepend
             content="#portal-personaltools-wrapper"
-            theme="#layoutdims" />
+            theme="children:#banner" />
         <replace
             content="#portal-searchbox"
             theme="#search" />

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en">
     <head>
         <title>The Perfect 2 Column Liquid Layout (right menu): No CSS hacks. SEO friendly. iPhone compatible.</title>
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
@@ -13,16 +13,16 @@
     <body>
         <div id="portal-wrapper">
             <div id="header">
-                <a id="logo" class="logo" href="/"><img src="sg.png" alt="" height="90" width="150" border="0"></a>
+                <a id="logo" class="logo" href="/"><img src="sg.png" alt="" /></a>
                 <div id="banner">
                     <div id="search">Search bar</div>
                     <ul id="sgbar" class="sgbar">
-                        <li><a href="#" class="active">Noticias</span></a></li>
-                        <li><a href="#">Revista</a></li>
-                        <li><a href="#">SG Campus</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">SG Jobs</a></li>
-                        <li><a href="#">SG Guía</a></li>
+                        <li><a href="#" class="active fondo_azul">Noticias</span></a></li>
+                        <li><a href="#" class="fondo_morado">Revista</a></li>
+                        <li><a href="#" class="fondo_naranja">SG Campus</a></li>
+                        <li><a href="#" class="fondo_verde">Eventos</a></li>
+                        <li><a href="#" class="fondo_rojo">SG Jobs</a></li>
+                        <li><a href="#" class="fondo_amarillo">SG Guía</a></li>
                     </ul>
 
                     <ul id="navbar" class="navbar">
@@ -39,10 +39,13 @@
                 </div>
             </div>
             <div id="adsbar">
-                <div class="adlong">Empty</div>
-                <div class="adshort">Empty</div>
+                <div class="adlong">
+                    <a class="logo" href="/"><img src="ad_long.jpg" alt="" width="726" height="90" /></a>
+                </div>
+                <div class="adshort">
+                    <a class="logo" href="/"><img src="ad_short.jpg" alt="" width="217" height="90" /></a>
+                </div>
             </div>
-            <p id="layoutdims">Measure columns in: <a href="http://matthewjamestaylor.com/blog/ultimate-2-column-right-menu-pixels.htm">Pixel widths</a> | <a href="http://matthewjamestaylor.com/blog/ultimate-2-column-right-menu-ems.htm">Em widths</a> | <strong>Percentage widths</strong></p>
             <div class="colmask rightmenu">
                 <div class="colleft">
                     <div class="col1">
@@ -70,15 +73,62 @@
                         <!-- Column 1 end -->
                     </div>
                     <div class="col2">
+                        <a class="logo" href="/"><img src="redes_sociales.png" alt="" width="300" height="198" /></a>
+                        <a class="logo" href="/"><img src="ad1.png" alt="" width="300" height="223" /></a>
                         <!-- Column 2 start -->
                         <!-- Column 2 end -->
                     </div>
                 </div>
             </div>
             <div id="footer">
-                <div>
-                    © 2011 SG Software Guru. Todos los derechos reservados.
+                <div id="footer-columns">
+                    <div class="column">
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                            <li><a href="">Nulla eleifend cursus enim.</a></li>
+
+                            <li><a href="">Mauris condimentum nunc in.</a></li>
+                            <li><a href="">Suspendisse sed lacus erat.</a></li>
+                            <li><a href="">Etiam in libero mi, at sol.</a></li>
+                            <li><a href="">Nam eu velit sed eros iacu.</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>Donec accumsan urna a puru.</li>
+                            <li>Integer auctor justo quis.</li>
+                            <li>Nam tincidunt pulvinar do.</li>
+
+                            <li>Fusce sodales magna at nu.</li>
+                            <li>Nam sed urna eu lorem bib.</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="">Duis hendrerit quam vel q.</a></li>
+                            <li><a href="">Sed at lacus vel libero dictum accumsan.</a></li>
+                            <li><a href="">Etiam sodales euismod nulla, ac feugiat purus vulputate a.</a></li>
+                            <li>In pulvinar sem at leo male.</li>
+                            <li>Nulla tristique mauris vel odio placerat blandit porttitor arcu aliquet.</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>Vivamus et ante ipsum, at semper sem.</li>
+                            <li>Vivamus ut mi imperdiet turpis dignissim porta placerat et elit.</li>
+                            <li>Aenean volutpat molestie massa, vitae fermentum velit varius fringilla.</li>
+                            <li>Sed ac orci vel sapien viverra porttitor.</li>
+                        </ul>
+                    </div>
                 </div>
+                <div id="footer-menu">
+                    <ul>
+                        <li>acerca de sg</li>
+                        <li>contacto</li>
+                        <li>créditos</li>
+                    </ul>
+                </div>
+                <span id="colophon">© 2011 SG Software Guru. Todos los derechos reservados.</span>
             </div>
         </div>
 
