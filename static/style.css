@@ -269,6 +269,10 @@ ul#sgbar, ul#navbar {
     display: inline-block;
     height: 60px; width: 60px;
     text-align: center;
+    padding-top: 4px;
+}
+#redes-sociales a:hover {
+    background-color: #D7E8F0;
 }
 #redes-sociales img, #redes-sociales span {
     display: inline;
