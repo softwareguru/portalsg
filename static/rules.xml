@@ -57,7 +57,10 @@
         <replace
             content="#portal-searchbox"
             theme="#search" />
-        <replace
+        <!--prepend
+            content="#portal-breadcrumbs"
+            theme="children:div.col1" /-->
+        <append
             content="children:#portal-column-content"
             theme="children:div.col1" />
         <append

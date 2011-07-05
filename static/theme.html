@@ -12,6 +12,14 @@
     </head>
     <body>
         <div id="portal-wrapper">
+            <div id="adsbar">
+                <div class="adlong">
+                    <a class="logo" href="/"><img src="/static/ad_long.jpg" alt="" width="726" height="90" /></a>
+                </div>
+                <div class="adshort">
+                    <a class="logo" href="/"><img src="/static/ad_short.jpg" alt="" width="217" height="90" /></a>
+                </div>
+            </div>
             <div id="header">
                 <a id="logo" class="logo" href="/"><img src="sg.png" alt="" /></a>
                 <div id="banner">
@@ -38,50 +46,48 @@
 
                 </div>
             </div>
-            <div id="adsbar">
-                <div class="adlong">
-                    <a class="logo" href="/"><img src="ad_long.jpg" alt="" width="726" height="90" /></a>
-                </div>
-                <div class="adshort">
-                    <a class="logo" href="/"><img src="ad_short.jpg" alt="" width="217" height="90" /></a>
-                </div>
-            </div>
             <div class="colmask rightmenu">
                 <div class="colleft">
                     <div class="col1">
                         <!-- Column 1 start -->
-                        <h2>Percentage dimensions of the right menu layout</h2>
-                        <img src="http://matthewjamestaylor.com/blog/perfect-2-column-right-menu-dimensions.gif" width="350" height="370" alt="Two column right menu layout dimensions" />
-                        <p>All the dimensions are in percentage widths so the layout adjusts to any screen resolution. Vertical dimensions are not set so they stretch to the height of the content.</p>
-                        <h3>Maximum column content widths</h3>
-
-                        <p>To prevent wide content (like long URLs) from destroying the layout (long content can make the page scroll horizontally) the column content divs are set to overflow:hidden. This chops off any content that is wider than the div. Because of this, it's important to know the maximum widths allowable at common screen resolutions. For example, if you choose 800 x 600 pixels as your minimum compatible resolution what is the widest image that can be safely added to each column before it gets chopped off? Here are the figures:</p>
-                        <dl>
-                            <dt><strong>800 x 600</strong></dt>
-                            <dd>Right column: 162 pixels</dd>
-                            <dd>Main page: 550 pixels</dd>
-                            <dt><strong>1024 x 768</strong></dt>
-
-                            <dd>Right column: 210 pixels</dd>
-                            <dd>Main page: 709 pixels</dd>
-                        </dl>
-                        <h2>The nested div structure</h2>
-                        <p>I've colour coded each div so it's easy to see:</p>
-                        <img src="http://matthewjamestaylor.com/blog/perfect-2-column-right-menu-div-structure.gif" width="350" height="369" alt="Two column right menu layout nested div structure" />
-                        <p>The header, colmask and footer divs are 100% wide and stacked vertically one after the other. Colleft is inside colmask. The two column content divs (col1 &amp; col2) are inside colleft. Notice that the main content column (col1) comes before the side column.</p>
-
+                        <div id="feature">
+                            <img src="images/tmp_image.jpg" alt="" />
+                            <h2><a href="">Phasellus ipsum tortor</a></h2>
+                            <span class="publi-info">Autor, Fecha</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ipsum tortor, pulvinar vel feugiat vel, adipiscing vitae dolor. Vestibulum sollicitudin tincidunt fringilla. In velit felis, egestas sed vestibulum vitae, posuere nec orci. Pellentesque ut quam ante, nec convallis sapien.</p>
+                        </div>
                         <!-- Column 1 end -->
                     </div>
                     <div class="col2">
-                    </div>
-                    <div class="col2">
                         <div id="redes-sociales">
-                            <a class="logo" href="/"><img src="icono-facebookGRIS.png" alt="Vísitanos en facebook.com" height="31" width="31" /></a>
-                            <a class="logo" href="/"><img src="vimeo_iconGRIS.png" alt="Vísitanos en vimeo.com" height="31" width="31" /></a>
-                            <a class="logo" href="/"><img src="youtube_iconGRIS.png" alt="Vísitanos en youtube.com" height="31" width="31" /></a>
+                            <h2>SG en redes sociales</h2>
+                            <div>
+                                <a class="logo" href="/">
+                                    <img src="images/facebook.png" alt="Vísitanos en facebook.com" height="31" width="31" />
+                                    <span>Facebook</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="logo" href="/">
+                                    <img src="images/vimeo.png" alt="Vísitanos en vimeo.com" height="31" width="31" />
+                                    <span>Vimeo</span>
+                                </a>
+                                <a class="logo" href="/">
+                                    <img src="images/twitter.png" alt="Vísitanos en twitter.com" height="31" width="31" />
+                                    <span>Twitter</span>
+                                </a>
+                                <a class="logo" href="/">
+                                    <img src="images/linkedin.png" alt="Vísitanos en linkedin.com" height="31" width="31" />
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a class="logo" href="/">
+                                    <img src="images/youtube.png" alt="Vísitanos en youtube.com" height="31" width="31" />
+                                    <span>Youtube</span>
+                                </a>
+                            </div>
                         </div>
-                        <a class="logo" href="/"><img src="redes_sociales.png" alt="" width="300" height="198" /></a>
-                        <a class="logo" href="/"><img src="ad1.png" alt="" width="300" height="223" /></a>
+                        <!--a class="logo" href="/"><img src="redes_sociales.png" alt="" width="300" height="198" /></a>
+                        <a class="logo" href="/"><img src="ad1.png" alt="" width="300" height="223" /></a-->
                         <!-- Column 2 start -->
                         <!-- Column 2 end -->
                     </div>

@@ -35,7 +35,8 @@ p {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a8a8a', endColorstr='#ffffff'); /* for IE */
     background: -webkit-gradient(linear, left top, left bottom, from(#8a8a8a), to(#ffffff)); /* for webkit browsers */
     background: -moz-linear-gradient(top,  #8a8a8a,  #ffffff); /* for firefox 3.6+ */ 
-    background-image: url(cabezal.png);
+    background-image: url("cabezal.png");
+    background-repeat: no-repeat;
 }
 #header p,
 #header h1,
@@ -71,9 +72,9 @@ ul#sgbar li a, ul#navbar li a {
 	line-height:1.3em;
 }
 #header ul#navbar li a {
-    height: 20px; line-height: 20px;
+    height: 16px; line-height: 20px;
     width: 105px;
-    padding: 3px 5px 3px 0; border-left: 1px solid #565656;
+    padding: 0px 5px 3px 0; border-left: 1px solid #565656;
     text-align: center;
     text-transform: uppercase;
 	color:##565656;
@@ -86,8 +87,8 @@ ul#sgbar li a, ul#navbar li a {
 	background:#4A4A4A;
 	color:#565656;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#c8c8c9'); /* for IE */
-    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#c8c8c9)); /* for webkit browsers */
-    background: -moz-linear-gradient(top,  #fafafa,  #c8c8c9); /* for firefox 3.6+ */ 
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#888888)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #fafafa,  #888888); /* for firefox 3.6+ */ 
 }
 #header ul#navbar li a.active,
 #header ul#navbar li a.active:hover {
@@ -104,18 +105,22 @@ ul#sgbar li a, ul#navbar li a {
     margin: 0; padding: 0;
 }
 #banner {
-    width: 785px;
+    width: 785px; margin-left: -3px;
     vertical-align: top;
 }
 #logo img {
     width: 145px; height: 80px;
-    padding: 5px 0  0 12px;
+    margin: 16px 0  0 16px;
 }
 #portal-personaltools {
-    padding: 0;
-    -moz-border-radius-bottomleft: 0;
-    -moz-border-radius-bottomright: 0;
-    background: transparent;
+    padding: 4px 12px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #005a80;
+}
+#portal-personaltools dd {
+    background-color: #d7e8f0;
 }
 dl.actionMenu a, dl.actionMenu a:link, dl.actionMenu a:visited {
     color: #ffffff;
@@ -131,7 +136,7 @@ dd.actionMenuContent a, dd.actionMenuContent a:link, dd.actionMenuContent a:visi
     text-transform: uppercase;
 }
 #portal-searchbox {
- margin: 0 0 2px 0;
+ margin: 22px 0 12px 0;
 }
 
 #searchGadget, .searchButton {
@@ -144,13 +149,14 @@ ul#sgbar, ul#navbar {
 }
 #header ul.sgbar li a {
     height: 25px; line-height: 25px;
-    width: 117px; padding: 0 6px 0 0;
+    width: 110px; padding: 0 6px 0 0;
     color: #ffffff;
-    text-align: right; text-transform: uppercase; font-size: 14px;
+    text-align: right; text-transform: uppercase;
+    font-family: Trebuchet MS, sans-serif; font-size: 13px; font-weight: bold;
 }
 /* Background colors */
 #header ul.sgbar a.fondo_azul {
-    background-color: #005a7f;
+    background-color: #005a80;
 }
 #header ul.sgbar a.fondo_morado {
     background-color: #81007f;
@@ -190,10 +196,10 @@ ul#sgbar, ul#navbar {
     margin: 0; padding: 0;
 }
 #header ul.navbar li a {
-    height: 20px; line-height: 20px;
-    width: 110px;
-    padding: 3px 0;
-    font-size: 10px; text-transform: capitalize;
+    height: 16px; line-height: 20px; width: 110px;
+    padding: 3px 0; color: #4d4d4d;
+    text-transform: capitalize;
+    font-family: Trebuchet MS, sans-serif; font-size: 11px;
 }
 #adsbar {
     clear: both; display: block;
@@ -210,20 +216,63 @@ ul#sgbar, ul#navbar {
 }
 .adlong {
     width: 726px;
-    background-image: url(ad_long.png);
+    /*background-image: url(/static/ad_long.jpg);*/
 }
 .adshort {
     padding: 0 5px;
     width: 215px;
 }
 /* 'widths' sub menu */
-#layoutdims {
-	clear:both;
-	background:#eee;
-	border-top:4px solid #000;
-	margin:0;
-	padding:6px 15px !important;
-	text-align:right;
+#feature {
+    height: 150px;
+    background-color: #3d819e;
+    -moz-box-shadow:inset 0 0 20px 10px #2a617f;
+    -webkit-box-shadow:inset 0 0 20px 10px #2a617f;
+    box-shadow:inset 0 0 20px 10px #2a617f;
+    padding-top: 16px;
+}
+#feature p, #feature h2, #feature .publi-info {
+    padding: 0 0 0 28px;
+    color: #ffffff;
+}
+#feature h2 {
+    margin: 0;
+    font-size: 20px;
+}
+#feature h2 a {
+    color: #ffffff;
+}
+#feature h2 a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+#feature img {
+    float: right;
+    margin: 0 24px 11px 11px;
+}
+#breadcrumbs-you-are-here {
+    color: #4d4d4d;
+}
+#redes-sociales {
+    width: 300px; height: 170px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+#redes-sociales h2{
+    margin: 0; padding: 6px 0 14px 0;
+    color: #005a80;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#redes-sociales a {
+    display: inline-block;
+    height: 60px; width: 60px;
+    text-align: center;
+}
+#redes-sociales img, #redes-sociales span {
+    display: inline;
+    font-size: 12px; font-weight: bold;
 }
 /* column container */
 .colmask {
