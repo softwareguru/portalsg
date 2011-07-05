@@ -61,7 +61,7 @@ p {
 ul#sgbar li a, ul#navbar li a {
 	display:block;
 	float:left;
-	margin:0 0 0 1px;
+	margin:0;
 	padding:3px 10px;
 	text-align:center;
 	background:#eee;
@@ -74,7 +74,7 @@ ul#sgbar li a, ul#navbar li a {
 #header ul#navbar li a {
     height: 16px; line-height: 20px;
     width: 105px;
-    padding: 0px 5px 3px 0; border-left: 1px solid #565656;
+    padding: 0px 0px 3px 0; border-left: 1px solid #565656;
     text-align: center;
     text-transform: uppercase;
 	color:##565656;
@@ -98,6 +98,7 @@ ul#sgbar li a, ul#navbar li a {
 }
 #header ul#navbar li a span {
 	display:block;
+    font-style: italic;
 }
 
 #banner, #logo {
@@ -148,7 +149,7 @@ ul#sgbar, ul#navbar {
     margin: 0; padding: 0;
 }
 #header ul.sgbar li a {
-    height: 25px; line-height: 25px;
+    height: 25px; line-height: 30px;
     width: 110px; padding: 0 6px 0 0;
     color: #ffffff;
     text-align: right; text-transform: uppercase;
@@ -343,7 +344,8 @@ ul#sgbar, ul#navbar {
     width: 25%; margin: 20px auto 30px auto; color: #606060;
     text-align: center;
     font-size: 11px;
-    font-family: Arial, sans-serif;
+    font-family: Trebuchet MS, sans-serif;
+    color: #4d4d4d;
 }
 #footer-columns .column ul {
     margin: 0px 30px;
@@ -353,6 +355,22 @@ ul#sgbar, ul#navbar {
     display: block;
     width: 100%; margin: 14px 0;
     line-height: 14px;
+}
+#footer-columns h2 {
+    display: block;
+    border-bottom: 2px solid #005A80;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#footer-columns a {
+    color: #4d4d4d;
+}
+#footer-columns a:hover {
+    color: #005a80;
+    text-decoration: underline;
+}
+#footer-menu, #colophon {
+    color: #ffffff;
 }
 #colophon {
     text-align: right;
