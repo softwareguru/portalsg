@@ -50,8 +50,9 @@
     width: auto;
     margin: 0; padding: 0;
 }
-#header #navbar {
+#navbar {
     margin: 0; padding: 0;
+    border-left: 1px solid #565656;
     background:#4A4A4A;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#c2c2c2'); /* for IE */
     background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#c2c2c2)); /* for webkit browsers */
@@ -69,7 +70,7 @@
 	position:relative;
 	line-height:1.3em;
 }
-#header #navbar li a {
+#navbar li a {
     text-align: center;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#c2c2c2'); /* for IE */
     background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#c2c2c2)); /* for webkit browsers */
@@ -78,74 +79,22 @@
 #navbar li a {
     height: 16px; line-height: 16px;
     width: 105px;
-    padding: 0; border-left: 1px solid #565656;
+    padding: 0; border-right: 1px solid #565656;
     color: #4d4d4d;
     text-transform: uppercase;
     font-family: Trebuchet MS, sans-serif; font-size: 11px;
 }
-#header #navbar li a:hover {
-	background:#4A4A4A;
-	color:#565656;
+#navbar li a:hover {
+    background:#4A4A4A;
+    color:#565656;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#c8c8c9'); /* for IE */
     background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#888888)); /* for webkit browsers */
     background: -moz-linear-gradient(top,  #fafafa,  #888888); /* for firefox 3.6+ */ 
 }
-#header #navbar li a.active,
-#header #navbar li a.active:hover {
-    color:#fff;
-    background:#000;
-    font-weight:bold;
-}
-#header #navbar li a span {
+#navbar li a span {
     display:block;
     font-style: italic;
 }
-#sgbar li a {
-    height: 25px; line-height: 30px;
-    width: 110px; padding: 0 6px 0 0;
-    color: #ffffff;
-    text-align: right; text-transform: uppercase;
-    font-family: Trebuchet MS, sans-serif; font-size: 13px; font-weight: bold;
-}
-/* Background colors */
-#sgbar a.fondo_azul {
-    background-color: #005a80;
-}
-#sgbar a.fondo_morado {
-    background-color: #81007f;
-}
-#sgbar a.fondo_naranja {
-    background-color: #d3691f;
-}
-#sgbar a.fondo_verde {
-    background-color: #004101;
-}
-#sgbar a.fondo_rojo {
-    background-color: #8c0001;
-}
-#sgbar a.fondo_amarillo {
-    background-color: #e0a000;
-}
-#sgbar a.fondo_azul:hover {
-    background-color: #3366cc;
-}
-#sgbar a.fondo_morado:hover {
-    background-color: #b13fb3;
-}
-#sgbar a.fondo_naranja:hover {
-    background-color: #ff9933;
-}
-#sgbar a.fondo_verde:hover {
-    background-color: #339933;
-}
-#sgbar a.fondo_rojo:hover {
-    background-color: #cc3333;
-}
-#sgbar a.fondo_amarillo:hover {
-    background-color: #ffcc00;
-}
-
-
 #portal-personaltools {
     padding: 4px 12px;
     -moz-border-radius: 0;

@@ -1,0 +1,46 @@
+#sgbar li a {
+    height: 25px; line-height: 30px;
+    width: 110px; padding: 0 6px 0 0;
+    color: #ffffff;
+    text-align: right; text-transform: uppercase;
+    font-family: Trebuchet MS, sans-serif; font-size: 13px; font-weight: bold;
+}
+/* Background colors */
+#sgbar a.fondo_azul {
+    background-image: url('images/not1.png');
+}
+#sgbar a.fondo_morado {
+    background-image: url('images/rev1.png');
+}
+#sgbar a.fondo_naranja {
+    background-image: url('images/campus1.png');
+}
+#sgbar a.fondo_verde {
+    background-image: url('images/eventos1.png');
+}
+#sgbar a.fondo_rojo {
+    background-image: url('images/jobs1.png');
+}
+#sgbar a.fondo_amarillo {
+    background-image: url('images/guia1.png');
+}
+#sgbar a.fondo_azul:hover {
+    background-image: url('images/not2.png');
+}
+#sgbar a.fondo_morado:hover {
+    background-image: url('images/rev2.png');
+}
+#sgbar a.fondo_naranja:hover {
+    background-image: url('images/campus2.png');
+}
+#sgbar a.fondo_verde:hover {
+    background-image: url('images/eventos2.png');
+}
+#sgbar a.fondo_rojo:hover {
+    background-image: url('images/jobs2.png');
+}
+#sgbar a.fondo_amarillo:hover {
+    background-image: url('images/guia2.png');
+}
+
+
