@@ -1,0 +1,28 @@
+#redes-sociales {
+    width: 300px; height: 170px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+#redes-sociales div {
+    padding-bottom: 5px;
+}
+#redes-sociales h2{
+    margin: 0; padding: 6px 0 14px 0;
+    color: #005a80;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#redes-sociales a {
+    display: inline-block;
+    height: 60px; width: 60px;
+    text-align: center;
+    padding-top: 4px;
+}
+#redes-sociales a:hover {
+    background-color: #D7E8F0;
+}
+#redes-sociales img, #redes-sociales span {
+    display: inline;
+    font-size: 12px; font-weight: bold;
+}
