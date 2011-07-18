@@ -20,6 +20,7 @@
     </proxy>
 
     <match path="regex:^/portal_javascripts/.*" abort="1" />
+    <match path="regex:/manage_.*$" abort="1" />
     <!-- Rules for special cases in Plone sites -->
     <match path="contains:image_view_fullscreen" abort="1" />
     <match path="contains:refbrowser_popup" abort="1" />
@@ -56,10 +57,13 @@
         <replace
             content="#portal-searchbox"
             theme="#search" />
-        <replace
+        <prepend
+            content="#portal-breadcrumbs"
+            theme="children:div.col1" />
+        <append
             content="children:#portal-column-content"
             theme="children:div.col1" />
-        <replace
+        <append
             content="children:#portal-column-one"
             theme="children:div.col2" />
         <replace

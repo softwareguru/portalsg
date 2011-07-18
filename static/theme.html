@@ -9,9 +9,22 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="screen.css" media="screen" /-->
         <link rel="stylesheet" type="text/css" href="/static/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/static/header.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/static/sgbar.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/static/social.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/static/contents.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/static/footer.css" media="screen" />
     </head>
     <body>
         <div id="portal-wrapper">
+            <div id="adsbar">
+                <div class="adlong">
+                    <a class="logo" href="/"><img src="/static/ad_long.jpg" alt="" width="726" height="90" /></a>
+                </div>
+                <div class="adshort">
+                    <a class="logo" href="/"><img src="/static/ad_short.jpg" alt="" width="217" height="90" /></a>
+                </div>
+            </div>
             <div id="header">
                 <a id="logo" class="logo" href="/"><img src="sg.png" alt="" /></a>
                 <div id="banner">
@@ -24,7 +37,6 @@
                         <li><a href="#" class="fondo_rojo">SG Jobs</a></li>
                         <li><a href="#" class="fondo_amarillo">SG Guía</a></li>
                     </ul>
-
                     <ul id="navbar" class="navbar">
                         <li><a href="http://matthewjamestaylor.com/blog/perfect-3-column.htm">3 Column <span>Holy Grail</span></a></li>
                         <li><a href="http://matthewjamestaylor.com/blog/perfect-3-column-blog-style.htm">3 Column <span>Blog Style</span></a></li>
@@ -35,46 +47,47 @@
                         <li><a href="http://matthewjamestaylor.com/blog/perfect-full-page.htm">1 Column <span>Full Page</span></a></li>
                         <li><a href="http://matthewjamestaylor.com/blog/perfect-stacked-columns.htm">Stacked <span>columns</span></a></li>
                     </ul>
-
-                </div>
-            </div>
-            <div id="adsbar">
-                <div class="adlong">
-                    <a class="logo" href="/"><img src="ad_long.jpg" alt="" width="726" height="90" /></a>
-                </div>
-                <div class="adshort">
-                    <a class="logo" href="/"><img src="ad_short.jpg" alt="" width="217" height="90" /></a>
                 </div>
             </div>
             <div class="colmask rightmenu">
                 <div class="colleft">
                     <div class="col1">
                         <!-- Column 1 start -->
-                        <h2>Percentage dimensions of the right menu layout</h2>
-                        <img src="http://matthewjamestaylor.com/blog/perfect-2-column-right-menu-dimensions.gif" width="350" height="370" alt="Two column right menu layout dimensions" />
-                        <p>All the dimensions are in percentage widths so the layout adjusts to any screen resolution. Vertical dimensions are not set so they stretch to the height of the content.</p>
-                        <h3>Maximum column content widths</h3>
-
-                        <p>To prevent wide content (like long URLs) from destroying the layout (long content can make the page scroll horizontally) the column content divs are set to overflow:hidden. This chops off any content that is wider than the div. Because of this, it's important to know the maximum widths allowable at common screen resolutions. For example, if you choose 800 x 600 pixels as your minimum compatible resolution what is the widest image that can be safely added to each column before it gets chopped off? Here are the figures:</p>
-                        <dl>
-                            <dt><strong>800 x 600</strong></dt>
-                            <dd>Right column: 162 pixels</dd>
-                            <dd>Main page: 550 pixels</dd>
-                            <dt><strong>1024 x 768</strong></dt>
-
-                            <dd>Right column: 210 pixels</dd>
-                            <dd>Main page: 709 pixels</dd>
-                        </dl>
-                        <h2>The nested div structure</h2>
-                        <p>I've colour coded each div so it's easy to see:</p>
-                        <img src="http://matthewjamestaylor.com/blog/perfect-2-column-right-menu-div-structure.gif" width="350" height="369" alt="Two column right menu layout nested div structure" />
-                        <p>The header, colmask and footer divs are 100% wide and stacked vertically one after the other. Colleft is inside colmask. The two column content divs (col1 &amp; col2) are inside colleft. Notice that the main content column (col1) comes before the side column.</p>
-
+                        <div id="feature">
+                            <img src="images/tmp_image.jpg" alt="" />
+                            <h2><a href="">Phasellus ipsum tortor</a></h2>
+                            <span class="publi-info">Autor, Fecha</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ipsum tortor, pulvinar vel feugiat vel, adipiscing vitae dolor. Vestibulum sollicitudin tincidunt fringilla. In velit felis, egestas sed vestibulum vitae, posuere nec orci. Pellentesque ut quam ante, nec convallis sapien.</p>
+                        </div>
                         <!-- Column 1 end -->
                     </div>
                     <div class="col2">
-                        <a class="logo" href="/"><img src="redes_sociales.png" alt="" width="300" height="198" /></a>
-                        <a class="logo" href="/"><img src="ad1.png" alt="" width="300" height="223" /></a>
+                        <div id="redes-sociales">
+                            <h2>SG en redes sociales</h2>
+                            <div>
+                                <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsoftwareguru&amp;width=300&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:62px;" allowTransparency="true"></iframe>
+                            </div>
+                            <div>
+                                <a class="logo" href="http://www.vimeo.com/softwareguru">
+                                    <img src="images/vimeo.png" alt="Vísitanos en vimeo.com" height="31" width="31" />
+                                    <span>Vimeo</span>
+                                </a>
+                                <a class="logo" href="http://twitter.com/RevistaSG">
+                                    <img src="images/twitter.png" alt="Vísitanos en twitter.com" height="31" width="31" />
+                                    <span>Twitter</span>
+                                </a>
+                                <a class="logo" href="http://www.linkedin.com/groups?gid=2317244">
+                                    <img src="images/linkedin.png" alt="Vísitanos en linkedin.com" height="31" width="31" />
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a class="logo" href="http://www.youtube.com/user/RevistaSG">
+                                    <img src="images/youtube.png" alt="Vísitanos en youtube.com" height="31" width="31" />
+                                    <span>Youtube</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--a class="logo" href="/"><img src="redes_sociales.png" alt="" width="300" height="198" /></a>
+                        <a class="logo" href="/"><img src="ad1.png" alt="" width="300" height="223" /></a-->
                         <!-- Column 2 start -->
                         <!-- Column 2 end -->
                     </div>
@@ -84,6 +97,7 @@
                 <div id="footer-columns">
                     <div class="column">
                         <ul>
+                            <h2>Nulla Facilisi</h2>
                             <li><a href="">Lorem ipsum dolor sit amet.</a></li>
                             <li><a href="">Nulla eleifend cursus enim.</a></li>
 
@@ -95,6 +109,7 @@
                     </div>
                     <div class="column">
                         <ul>
+                            <h2>Nam Semper</h2>
                             <li>Donec accumsan urna a puru.</li>
                             <li>Integer auctor justo quis.</li>
                             <li>Nam tincidunt pulvinar do.</li>
@@ -105,6 +120,7 @@
                     </div>
                     <div class="column">
                         <ul>
+                            <h2>Oacilisi Luctus</h2>
                             <li><a href="">Duis hendrerit quam vel q.</a></li>
                             <li><a href="">Sed at lacus vel libero dictum accumsan.</a></li>
                             <li><a href="">Etiam sodales euismod nulla, ac feugiat purus vulputate a.</a></li>
@@ -114,6 +130,7 @@
                     </div>
                     <div class="column">
                         <ul>
+                            <h2>Aenan volu</h2>
                             <li>Vivamus et ante ipsum, at semper sem.</li>
                             <li>Vivamus ut mi imperdiet turpis dignissim porta placerat et elit.</li>
                             <li>Aenean volutpat molestie massa, vitae fermentum velit varius fringilla.</li>
