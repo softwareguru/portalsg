@@ -60,10 +60,10 @@
         <prepend
             content="#portal-breadcrumbs"
             theme="children:div.col1" />
-        <drop
+        <!--drop
             content=".total-thumbs-down" />
         <drop
-            content=".thumbs-down" />
+            content=".thumbs-down" /-->
         <append
             content="children:#portal-column-content"
             theme="children:div.col1" />
