@@ -28,6 +28,7 @@
     <rule class="default">
         <theme href="/static/theme.html" />
         <!-- Append the id/class attributes from the body tag, this is important for Kupu and per-section styling -->
+        <append content="attributes(id,class):/html/body" theme="attributes:/html/body" />
         <!--append
             content="link[href *= 'public.css']"
             theme="/html/head/link" />

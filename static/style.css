@@ -142,6 +142,7 @@ p {
 }
 #content .tileItem {
     height: 90px;
+    border-bottom: 1px solid #D7E8F0;
 }
 #content .tileItem > a {
     display: block;
@@ -154,7 +155,21 @@ p {
 #content .tileItem > a img {
     margin: 0;
 }
+#content .tileItem > a:hover {
+    overflow: visible;
+    z-index: 1000;
+    border: none;
+}
+#content .tileItem > a:hover img {
+    border: 1px solid #999999;
+    background: #ffffff;
+    padding: 2px;
+}
 #content .tileHeadline {
     font-size: 16px;
     color: #005a80;
+}
+#content div.documentByLine {
+    font-style: italic;
+    font-size: 12px;
 }
