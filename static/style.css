@@ -127,3 +127,34 @@ p {
 	width: 300px;			/* right column content width (right column width minus left and right padding) */
 	left: 315px;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
 }
+#content img.tileImage, #content div.newsImageContainer {
+    float: left;
+}
+#content {
+    background-image: url('images/imgfondo.png');
+    background-repeat: repeat-x;
+    padding: 5px;
+    font-family: verdana, arial, sans serif;
+}
+#content #parent-fieldname-title {
+    color: #005A80;
+    text-transform: uppercase;
+}
+#content .tileItem {
+    height: 90px;
+}
+#content .tileItem > a {
+    display: block;
+    float: left;
+    width: 64px; height: 64px;
+    line-height: 64px;
+    margin: 0 25px 0 15px;
+    overflow: hidden; position: relative;
+}
+#content .tileItem > a img {
+    margin: 0;
+}
+#content .tileHeadline {
+    font-size: 16px;
+    color: #005a80;
+}
