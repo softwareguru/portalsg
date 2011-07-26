@@ -18,12 +18,49 @@
     <proxy path="/" keep-host="1">
         <dest href="http://localhost:8080/VirtualHostBase/http/{HOST}/Plone/VirtualHostRoot/" />
     </proxy>
-
     <match path="regex:^/portal_javascripts/.*" abort="1" />
     <match path="regex:/manage_.*$" abort="1" />
     <!-- Rules for special cases in Plone sites -->
     <match path="contains:image_view_fullscreen" abort="1" />
     <match path="contains:refbrowser_popup" abort="1" />
+
+
+
+    <match path="regex:^/.+" class="other" />
+    <rule class="other">
+        <theme href="/static/theme.html" />
+        <drop theme="#feature" />
+        <append content="attributes(id,class):/html/body" theme="attributes:/html/body" />
+        <drop content="link[href $= 'columns.css']" />
+        <drop content="div[class $= 'searchSection']" />
+        <replace
+            content="children:#portal-globalnav"
+            theme="children:#navbar" />
+        <replace
+            content="attributes(href):#portal-logo"
+            theme="attributes(href):#logo .logo" />
+        <prepend
+            content="#portal-personaltools-wrapper"
+            theme="children:#banner" />
+        <replace
+            content="#portal-searchbox"
+            theme="#search" />
+        <prepend
+            content="#portal-breadcrumbs"
+            theme="children:div.col1" />
+        <replace
+            content="#portlets-above div.portletCarouselWrapper"
+            theme="#feature" />
+        <append
+            content="children:#portal-column-content"
+            theme="children:div.col1" />
+        <!--append
+            content="children:#portal-column-one"
+            theme="children:div.col2" />
+        <replace
+            content="children:#portal-column-two"
+            theme="children:div.col3" /-->
+    </rule>
 
     <rule class="default">
         <theme href="/static/theme.html" />
@@ -65,16 +102,19 @@
             content=".total-thumbs-down" />
         <drop
             content=".thumbs-down" /-->
+        <replace
+            content="#portlets-above div.portletCarouselWrapper"
+            theme="#feature" />
         <append
             content="children:#portal-column-content"
             theme="children:div.col1" />
-        <append
+        <!--append
             content="children:#portal-column-one"
             theme="children:div.col2" />
         <replace
             content="children:#portal-column-two"
             theme="children:div.col3" />
-        <!--replace
+        <replace
             content="children:/html"
             theme="children:/html" /-->
     </rule>
