@@ -30,3 +30,6 @@
 body.portaltype-news-item #content .thumb-rating {
     float: left;
 }
+#social_buttons {
+    padding: 0 20px;
+}

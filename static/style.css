@@ -129,6 +129,7 @@ p {
 }
 #content img.tileImage, #content div.newsImageContainer {
     float: left;
+    text-align: center;
 }
 #content {
     background-image: url('images/imgfondo.png');
@@ -138,14 +139,17 @@ p {
 }
 #content #parent-fieldname-title {
     color: #005A80;
-    text-transform: uppercase;
+    font-size: 25px;
 }
 body.portaltype-news-item #content #parent-fieldname-title,
 body.portaltype-news-item #content #plone-document-byline,
 body.portaltype-news-item #content #parent-fieldname-description {
-    margin-left: 220px;
+    font-family: verdana, arial, sans serif;
+    font-weight: normal;
+    text-transform: none;
 }
 body.portaltype-news-item #content img.tileImage, #content div.newsImageContainer {
+    width: 210px;
 }
 #content .tileItem {
     border-bottom: 1px solid #D7E8F0;
