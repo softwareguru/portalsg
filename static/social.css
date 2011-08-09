@@ -33,3 +33,18 @@ body.portaltype-news-item #content .thumb-rating {
 #social_buttons {
     padding: 0 20px;
 }
+
+form input.like-button {
+    text-indent: -3000px;
+    white-space: nowrap;
+    width: 35px;
+}
+form.enabled .selected{
+    display: none;
+}
+form.enabled input.like-button:hover, form.enabled input.like-button {
+    background-image: url("images/thumbs-up-off.png");
+}
+form.enabled input.dislike-button:hover, form.enabled input.dislike-button {
+    background-image: url("images/thumbs-up.png");
+}
