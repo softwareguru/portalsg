@@ -34,6 +34,9 @@ body.portaltype-news-item #content .thumb-rating {
     padding: 0 20px;
 }
 
+form.enabled .hidethumb {
+    display: none;
+}
 form input.like-button {
     text-indent: -3000px;
     white-space: nowrap;
@@ -47,4 +50,7 @@ form.enabled input.like-button:hover, form.enabled input.like-button {
 }
 form.enabled input.dislike-button:hover, form.enabled input.dislike-button {
     background-image: url("images/thumbs-up.png");
+}
+form.disabled .thumbs-down {
+    display: none;
 }
