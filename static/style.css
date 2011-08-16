@@ -56,13 +56,34 @@ p {
     width: 215px;
 }
 /* 'widths' sub menu */
-#feature {
-    height: 150px;
+#feature, div.carousel {
+    min-height: 150px;
     background-color: #3d819e;
     -moz-box-shadow:inset 0 0 20px 10px #2a617f;
     -webkit-box-shadow:inset 0 0 20px 10px #2a617f;
     box-shadow:inset 0 0 20px 10px #2a617f;
+}
+#feature {
     padding-top: 16px;
+}
+div.carousel .tileImage{
+    float: right;
+}
+div.carousel .tileItem > div > a {
+    display: block;
+    float: right;
+    width: 128px; height: 128px;
+    line-height: 128px;
+    margin: 0 25px 0 15px;
+    overflow: hidden; position: relative;
+}
+div.carousel .tileItem .tileHeadline > a,
+div.carousel .tileItem .tileFooter > a,
+div.carousel .tileItem {
+    color: #ffffff;
+}
+div.carousel a:hover {
+    text-decoration: underline;
 }
 #feature p, #feature h2, #feature .publi-info {
     padding: 0 0 0 28px;

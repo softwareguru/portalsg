@@ -49,8 +49,8 @@
             content="#portal-breadcrumbs"
             theme="children:div.col1" />
         <replace
-            content="#portlets-above div.portletCarouselWrapper"
-            theme="#feature" />
+            content="children:#portlets-above div.portletCarouselWrapper"
+            theme="children:#feature" />
         <append
             content="children:#portal-column-content"
             theme="children:div.col1" />
