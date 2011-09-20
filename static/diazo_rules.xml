@@ -1,0 +1,80 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<!-- 
+    <match path="regex:^/portal_javascripts/.*" abort="1" />
+    <match path="regex:/manage.*$" abort="1" />
+    <match path="contains:image_view_fullscreen" abort="1" />
+    <match path="contains:refbrowser_popup" abort="1" />
+
+
+
+    <match path="regex:^/.+" class="other" />
+    <rule class="other">
+-->
+    <theme href="theme.html" />
+    <replace
+        theme="/html/head/base"
+        content="/html/head/base"
+        />
+    <drop
+        theme="/html/head/meta"
+        />
+    <after
+        content="/html/head/meta"
+        theme-children="/html/head"
+        />
+    <before
+        content="/html/head/style | /html/head/script | /html/head/link"
+        theme-children="/html/head"
+        />
+    <replace theme="/html/head/title"
+        content="html/head/title" />
+    <copy
+        attributes="*"
+        css:content="body"
+        css:theme="body"
+        />
+    <drop
+        css:content="link[href $= 'columns.css']"
+        />
+    <drop
+        css:content="div[class $= 'searchSection']"
+        />
+    <replace
+        css:theme-children="#navbar"
+        css:content-children="#portal-globalnav"
+        />
+    <replace
+        attributes="href"
+        css:theme="#logo .logo"
+        css:content="#portal-logo"
+        />
+    <before
+        css:theme-children="#banner"
+        css:content="#portal-personaltools-wrapper"
+        />
+    <replace
+        css:theme="#search"
+        css:content="#portal-searchbox"
+        />
+    <replace
+        css:theme-children="#feature"
+        css:content-children="#portlets-above div.portletCarouselWrapper"
+        />
+    <after
+        css:theme-children="div.col1"
+        css:content-children="#portal-column-content"
+        />
+
+    <rules if-path="/">
+        <!-- This is a placeholder so that any rule below this <rules> tag
+             doesn't take effect if we are at the root of our themed site
+             -->
+    </rules>
+
+    <drop
+        css:theme="#feature"
+        />
+</rules>
